@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body{
-	background-color: black;
+	background-color: rgba(200,200,200,1.00);
 }
 h1{
 	
@@ -10,11 +10,28 @@ h1{
 h2{
 	
 }
-.column{
-	float: left;
-	width: 50%;
+a:link {
+	color: black;	
+}	
+a:visited {
+	color: dimgray;
+}
+a:hover{
+	color: darkgray;
+}
+a:active{
+	color: grey;
 }
 
+.column-one{
+	float: left;
+	width: 25vw;
+	height: 100vh;
+}
+.column-two{
+	float: left;
+	width: 75vw;
+}
 .row:after{
 	content:"";
 	display: table;
@@ -33,6 +50,7 @@ h2{
     display: block;
   }
   .nav-item {
+	margin: auto;
     list-style: none;
   }
 	@media screen and (orientation:landscape){ .navbar-nav {
